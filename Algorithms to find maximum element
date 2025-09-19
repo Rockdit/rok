@@ -15,7 +15,7 @@ int findMax(int arr[], int size){
 
 int main() {
     // Write C code here
-    int arr[] = {10, 20, 30, 40, 50};
+    int arr[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
     int size = sizeof(arr) / sizeof (arr[0]);
     cout << "Maximum element in the array is: " << findMax(arr, size);
     
