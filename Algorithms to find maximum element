@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int findMax(int arr[], int size){
+     int maxElement = arr[0]; //Assume first element is max
+     for(int i = 1; i < size; i++) {
+         if (arr[i] > maxElement) {
+             maxElement =arr[i]; //Update maximum if current element is greater
+         }
+     }
+    
+    return maxElement;
+    
+}
+
+
+int main() {
+    // Write C code here
+    int arr[] = {10, 20, 30, 40, 50};
+    int size = sizeof(arr) / sizeof (arr[0]);
+    cout << "Maximum element in the array is: " << findMax(arr, size);
+    
+    return 0;
+}
